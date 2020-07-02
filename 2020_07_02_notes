@@ -1,3 +1,38 @@
-1) How to find your location on terminal in linux -> use command in terminal -> **pwd**
+1) How to find your location on terminal in linux -> use command in terminal -> **pwd** prind working directory
+
+Linux Commands: https://www.hostinger.com/tutorials/linux-commands
+
+To open terminal: ** ctrl + alt + t **
+
+To Clean upper terminal comands and lists use command: ** ctrl + l **
+
+To close terminal command: ** ctrl + d **
+
+To close privious actions terminal: ** ctrl + c **
+
+To clean terminal: ** clean **
+
+To fast close the terminal: ** exit **
+
+To make folders in your current directory ** mkdir **
+
+Arrow up shows privious written commands!!!!!!!!!!!!!!!!!!!!!!!!!
+
+To show all used commands that you have typed: ** history **
+
+Command to open virtual machine ** VirtualBox --startvm XP **
+
+Command to find all roots in tour computer ** ls **
+Command to find all roots in tour computer ** ls .**
+Command to find all roots in tour computer ** ls /**
+
+promt -> user@epk428-4:~/Desktop$
+
+
+forford slash ** / ** 
+Back slash ** \ **
+Ampersand ** & **
+
 
 Mājasdarbs: 
+What is Logs?
