@@ -12,6 +12,8 @@ Article about, how to find Windows Event Log [How to find windows event log](htt
 
 Python Pandas Tutorial: A Complete Introduction for Beginners [Python Pandas Tutorial: A Complete Introduction for Beginners](https://www.learndatasci.com/tutorials/python-pandas-tutorial-complete-introduction-for-beginners/).
 
+Pandas DataFrame: Tā ir bibliotēka, kas ir pieejma python compilatoram to importējot ierakstot šādas komandas **import numpy as np** un **import pandas as pd**
+
 Solution article [Security Data Science: Analysis of Windows Event Logs using pandas DataFrame](https://medium.com/riga-data-science-club/transform-microsoft-xml-events-into-pandas-dataframe-11142501e7f9).
 
 ![Windows Event Log](https://github.com/Edgars008/EDIBO/blob/master/Capture.PNG)
