@@ -14,4 +14,4 @@ Python Pandas Tutorial: A Complete Introduction for Beginners [Python Pandas Tut
 
 Solution article [Security Data Science: Analysis of Windows Event Logs using pandas DataFrame](https://medium.com/riga-data-science-club/transform-microsoft-xml-events-into-pandas-dataframe-11142501e7f9).
 
-[Contribution guidelines for this project](Capture.PNG)
+![Windows Event Log](https://github.com/Edgars008/EDIBO/blob/master/Capture.PNG)
