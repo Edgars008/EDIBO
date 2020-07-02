@@ -22,6 +22,45 @@ To show all used commands that you have typed: ** history **
 
 Command to open virtual machine ** VirtualBox --startvm XP **
 
+Command to now what time and date are ** date **
+
+Command to show what is in the folder ** ls -l folder name ** 
+
+Command to show when created all folders in current folder ** ls -l **
+
+Command to show option where can you go, this shows all roots ** cd / two Tab **
+
+Command to get to next file ** ls | head ** gives first 10 logs
+
+Command to get to next file ** ls | tail ** ives last 10 logs
+
+Command to get to next file ** ls | head -n 3** in n you place number how much files your head needs to show.
+
+** ls | head -n 3 | wc -c **
+
+** ls | head -n 3 | wc -l **
+
+** ls | wc -l **
+
+** ls | wc -c **
+
+** ls Desktop/| wc --help ** shows all commands you can use!
+
+Make Variable ** a=123 **
+Command to return the value a ** echo $a **
+
+![](file:///home/user/Pictures/Screenshot%20from%202020-07-02%2017-50-34.png)
+
+Command to return the result a ** echo $((a + b)) ** - twon paratness means that we will work with numbers 
+
+Command to send our values to the file ** echo $((a + b)) EUR > rekini.txt **
+Comman to read the file ** ls -l rekini.txt **
+Comman to read the file ** cat rekini.txt **
+Comman to read the file ** head rekini.txt **
+Comman to read the file ** tail rekini.txt **
+All txt file ** ls -l *.txt **
+
+
 Command to find all roots in tour computer ** ls **
 Command to find all roots in tour computer ** ls .**
 Command to find all roots in tour computer ** ls /**
@@ -32,7 +71,15 @@ promt -> user@epk428-4:~/Desktop$
 forford slash ** / ** 
 Back slash ** \ **
 Ampersand ** & **
-
+Chell == Terminal == Console
 
 Mājasdarbs: 
 What is Logs?
+Double Cell
+Windows terminal
+VCLs
+Windows version 
+Update windows version to next one -- Whatch video
+Get UBUNDU virtual machine
+
+ByteWise operations https://wiki.python.org/moin/BitwiseOperators
