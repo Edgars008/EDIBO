@@ -1,0 +1,46 @@
+Ctrl + Alt + T
+Ctrl + Shift + T
+Ctrl + l -> clean up a little bit
+
+echo $0 -> Noskaidrojam ar ko mēs komunicējam!
+
+Characters(s) + Tab(2)
+
+man -> (quit with q)
+
+Comman_name -keys(s) argument(s)
+
+ls -tl
+ls -l
+neatceramies kā raksta tad -> man ls
+
+pwd, ls -cla, cd, mkdir
+faili: cat, head, tail, wc
+"Generāl informācija: date, history
+day2: pwd, ls -cl, history, cd, mkdir, head, tail, cat, date
+
+day3: 
+** nano ** - Chell teksta redaktors
+ls -l - drwxrwxrwx
+addresses - absolute (/ - root directory), relative ((.)- palikt šajā pašā directory, (..) - staigāt uz iepriekšējo directory, (~))
+** hexdump -C abc.txt **
+
+nano -> Atver terminalā teksta redaktoru
+
+nano text1.txt -> nano mēs atdodam argumentu text1.txt 
+
+-rw-r--r-- -> rw - read write - r-- otrais nozīmē, kam ir tiesības aiztikt failus - > 
+
+** cd ../Documents/ -> Aiziet līmeni atpakaļ par kuru tu zini, kas ir iepriekšējā directory
+** cp ../abc.txt ../ABC/abc2.txt ** izveidot faiala kopiju, kuru pēc tam saglabāt ABC mapē ar faila nosaukumu abc.txt
+
+** cat ../ABC/abc2.txt ** apskatamies faila saturu kas atrodas iepriekšējā direcory ABC jauno nokopētu failu abc2.txt
+
+
+
+absolūtā adrese -> 
+relatīvā adrese ->
+
+Linux cietais disks -> sākas ar /home/user/
+Cietais disks -> windows galvenais disks, kurā glabājas Operētājsistēmas faili
+Loģiskie diski -> Sadalīt windows apakš diski, kur var glabāt lietas
