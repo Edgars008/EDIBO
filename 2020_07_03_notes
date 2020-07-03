@@ -54,3 +54,51 @@ relatīvā adrese ->
 Linux cietais disks -> sākas ar /home/user/
 Cietais disks -> windows galvenais disks, kurā glabājas Operētājsistēmas faili
 Loģiskie diski -> Sadalīt windows apakš diski, kur var glabāt lietas
+
+
+
+2. Daļa
+
+** echo $tab 2x ** iedod visus mainīgos. Mainīgos raksta ar lielajiem burtiem, kas ir sistēmas.
+
+** PS1 = jekurš teksts vai simbols nomaina prompt home nosaukumu ** 
+
+instance - what doest in mean!!!
+
+** vim **
+** vim . ** - parāda visas pieejamās directorys
+
+** mc ** - lai izietu laukā Esc + 0 
+
+** vim opereations : command line Shift + v -> tālāk uzspiež (y) , tas nokopē tekstu pec tam uzspiež (p) nokopēs rindas! **
+
+** :q! ** Ja kaut kas tiek ierakstits Vim ** 
+
+** chmod +x faila nosaukums** - pievieno klāt exzecutible failam
+
+** time ./01.sh ** noskaidro cik ātri sistēma izpildās
+
+
+Uzlikt mājas vai apskatīties TOTAL COMMANDER
+
+
+tutorialpoints - priekš shell
+
+Uzlikt virtual box: UBUNDU 18.04
+
+install WSL
+
+Study BITWISE operations
+
+
+
+
+
+
+
+
+
+
+
+
+
