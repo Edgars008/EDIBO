@@ -23,8 +23,13 @@ day3:
 ** nano ** - Chell teksta redaktors
 ls -l - drwxrwxrwx
 addresses - absolute (/ - root directory), relative ((.)- palikt šajā pašā directory, (..) - staigāt uz iepriekšējo directory, (~))
-** hexdump -C abc.txt **
+** hexdump -C abc.txt ** (hex code for ASCII)
+** xxd -b ** binary code
+1 byte = 8 bits (0/1 - 2 states) => unique codes 2^8 = 256
 
+** whereis ls ** noskaidrot, kur atrodas atslēgas vārda aprakstsm, tas objekits ir fails ar izpildīšans sitēmām
+
+** echo $PATH ** ceļi, kur varam apskatīties komandas
 nano -> Atver terminalā teksta redaktoru
 
 nano text1.txt -> nano mēs atdodam argumentu text1.txt 
@@ -35,6 +40,11 @@ nano text1.txt -> nano mēs atdodam argumentu text1.txt
 ** cp ../abc.txt ../ABC/abc2.txt ** izveidot faiala kopiju, kuru pēc tam saglabāt ABC mapē ar faila nosaukumu abc.txt
 
 ** cat ../ABC/abc2.txt ** apskatamies faila saturu kas atrodas iepriekšējā direcory ABC jauno nokopētu failu abc2.txt
+** whereis **
+** PATH=$PATH:~ **
+**chmod 744 ** pats sev tiesības uzliec
+**chmod 740 ** pasaule nē
+
 
 
 
