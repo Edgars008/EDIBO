@@ -1,1 +1,14 @@
 
+1: Bash
+
+
+ls | ws ** wc-word count
+
+** cd - ** Where have been before
+
+** df ** - noskaidro brīvo atmiņu datorā
+
+** du -h ** izdrukā cik liels ir pievienotie failu lielums
+
+** man grap ** -> Shift + g - pēdējā lappuse -> ** /(atribūts-meklēt vārdu var) un spiež burtu n, lai pārlektu meklētājā uz nākamo!**
+
