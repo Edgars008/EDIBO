@@ -90,9 +90,34 @@ b. use command line (google -> github guide):
   https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
 
 
+https://github.com/kristianseng/DreamTeam1
+https://stackoverflow.com/questions/3528146/convert-decimal-to-binary-in-python
+https://www.geeksforgeeks.org/python-program-for-bubble-sort/
 
+python
+vars()
+a= 10
+b= 1.25
+c = 'text'
 
+Dators pats definē konstantes, ja programmētājs nav piešķīris!
+type(a)
+type(b)
+type(c)
 
+a.tab
+
+a.__doc__
+
+print(a.__doc__)
+
+idle &
+
+ASCII pirmie 32 simboli ir darbības 
+
+https://www.py4e.com/lessons/files
+https://www.py4e.com/lessons/files
+https://www.py4e.com/lessons
 
 
 
