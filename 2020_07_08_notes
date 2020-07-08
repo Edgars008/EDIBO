@@ -72,3 +72,31 @@ DEC BIN HEX
 13 1101 D
 14 1110 E
 15 1111 F
+
+
+
+
+1. Work with Github:
+repository
+branch (master, ...)
+commit
+pull request
+merge
+
+a. use GUI (google -> github guide)
+    https://guides.github.com/activities/hello-world/
+    
+b. use command line (google -> github guide):
+  https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
+
+
+
+
+
+
+
+
+
+
+
+
