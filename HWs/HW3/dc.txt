@@ -1,0 +1,46 @@
+#! /bin/bash
+
+#Create file to store computer time date
+#file="01.dat"
+if [ -f "01.dat" ]
+then
+rm 01.dat
+rm 02.dat
+rm 03.dat
+echo File 01.dat deleted!
+echo File 02.dat deleted!
+echo File 03.dat deleted!
+fi
+echo Created new 01.dat file!
+touch 01.dat
+echo Created new 02.dat file!
+touch 02.dat
+echo Created new 03.dat file!
+touch 03.dat
+
+echo Computer start reading your usage information!
+#Creating 1 min time variable
+current=$((SECONDS+60))
+loading=60
+#Deleting before stored information about computer usage
+truncate -s 0 01.dat
+truncate -s 0 02.dat
+truncate -s 0 03.dat
+
+#Starting Cycle to read computer usage in 1 min
+while [ $SECONDS -lt $current ]
+do
+#Computer sleeps for 1 sec
+sleep 1
+loading=$(($loading - 1))
+use=`df | grep sda2 | awk '{print}'`
+use2=`df | grep sda2 | awk '{print}'`
+tim=`date`
+echo Time remaining: $loading s
+#Computer prints to 01.dat file information about computer usage and time
+echo Datora noslogojums $use $use2 laiks: $tim >> 01.dat
+echo $loading $use $use2 $tim >> 02.dat
+echo $use $use2 >> 03.dat
+done
+
+
