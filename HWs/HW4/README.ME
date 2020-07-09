@@ -1,1 +1,25 @@
 
+#!/bin/bash
+
+#Read Users number
+read -p "Enter a number " number
+#Defini string to store result if remainder is 0, then add 0 else add 1
+byte=""
+
+while [ $number -gt 0 ]
+do
+remainder=$number
+
+if (( $remainder  % 2 == 0))
+then
+byte="$byte 0"
+else
+byte="$byte 1"
+fi
+
+number=$(($remainder / 2))
+
+done
+
+#Print result in reverse order
+echo $byte | rev
