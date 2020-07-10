@@ -8,3 +8,10 @@ Gooogle Colab -> https://colab.research.google.com/notebooks/intro.ipynb#recent=
 
 Home work
 1) Git bash ielikt pie HW6
+
+
+ def tukss(x,y,z):
+----> 2     if x == null:
+      3         x="Vards Uzvards"
+      4     if y == null:
+      5         y=1000000
