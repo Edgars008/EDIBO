@@ -15,3 +15,32 @@ Home work
       3         x="Vards Uzvards"
       4     if y == null:
       5         y=1000000
+      
+      
+      In [6]: f = open("a.dat", "w")
+
+In [7]: f.write("\tHello\n")
+Out[7]: 7
+
+In [8]: f.write("\n\tHello\n")
+Out[8]: 8
+
+In [9]: f.write("\n\tHelloz\n")
+Out[9]: 9
+
+In [10]: f.close()
+
+In [11]: f = open("a.dat", "a")
+
+In [12]: f.write("\n\tHelloz\n")
+Out[12]: 9
+
+In [13]: f.tell()
+Out[13]: 33
+
+In [14]: f.close()
+
+In [15]: f = open("a.dat")
+
+In [16]: f.write("\n\tHelloz\n")
+-------------------------------------
