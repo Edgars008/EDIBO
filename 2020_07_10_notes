@@ -8,6 +8,7 @@ Gooogle Colab -> https://colab.research.google.com/notebooks/intro.ipynb#recent=
 
 Home work
 1) Git bash ielikt pie HW6
+saglabāt failu no a.dat tad saņemam failu atveram salasam vērtības un pēc tam mēs salasam datus atpakaļ citā failā ar vēstuli
 
 
  def tukss(x,y,z):
@@ -44,3 +45,5 @@ In [15]: f = open("a.dat")
 
 In [16]: f.write("\n\tHelloz\n")
 -------------------------------------
+
+
