@@ -28,7 +28,7 @@ a^100 / a^99 = a^1
 res=2**100000
 res=str(res)
 
-for i in range(9): res.count(str(i))
+for i in range(10): print(str(i) + " : " + str(res.count(str(i))))
 
 
 https://stackoverflow.com/questions/24878174/how-to-count-digits-letters-spaces-for-a-string-in-python
