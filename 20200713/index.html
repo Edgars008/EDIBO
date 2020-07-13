@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="currency.js"></script> 
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Currency</title>
+</head>
+<body>
+
+<h2>Currency list</h2>
+
+<ol>
+  <li>EUR</li>
+  <li>USD</li>
+  <li>Pound</li>
+</ol> 
+ <div w3-include-html="currencyList.html"></div> 
+
+<a href="https://www.w3schools.com/html/html_links.asp">Click to Learn about HTML links</a>
+
+<br>
+
+<h2>Basic HTML Table</h2>
+
+<table style="width:50%">
+  <tr>
+    <th>Vārds</th>
+    <th>Uzvārds</th> 
+    <th>Vecums</th>
+  </tr>
+  <tr>
+    <td>Edgars</td>
+    <td>Naglis</td>
+    <td>27</td>
+  </tr>
+</table>
+
+<br>
+
+<img src="https://www.motortrend.com/uploads/sites/5/2017/11/2019-Mercedes-Benz-CLS-front-three-quarter-in-motion-07.jpg?fit=around%7C875:492" alt="Mercedez">
+
+<br>
+
+<svg width="400" height="100">
+  <rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+</svg>
+
+<br>
+
+
+
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="graph" aria-labelledby="title" role="img">
+  <title id="title">A line chart showing some information</title>
+<g class="grid x-grid" id="xGrid">
+  <line x1="90" x2="90" y1="5" y2="371"></line>
+</g>
+<g class="grid y-grid" id="yGrid">
+  <line x1="90" x2="705" y1="370" y2="370"></line>
+</g>
+  <g class="labels x-labels">
+  <text x="100" y="400">2008</text>
+  <text x="246" y="400">2009</text>
+  <text x="392" y="400">2010</text>
+  <text x="538" y="400">2011</text>
+  <text x="684" y="400">2012</text>
+  <text x="400" y="440" class="label-title">Year</text>
+</g>
+<g class="labels y-labels">
+  <text x="80" y="15">15</text>
+  <text x="80" y="131">10</text>
+  <text x="80" y="248">5</text>
+  <text x="80" y="373">0</text>
+  <text x="50" y="200" class="label-title">Price</text>
+</g>
+</svg>
+
+<a href="https://css-tricks.com/how-to-make-charts-with-svg/">Click to Read about SVG GRAPHIC</a>
+
+
+
+
+<!-- <div id="piechart"></div> -->
+
+<label class="container">EUR €
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">USD $
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">Pound £
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<p id="demo"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d.getDate() + "-" +(d.getMonth() + 1) + "-" + d.getFullYear();
+</script>
+
+</body>
+</html>

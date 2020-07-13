@@ -1,0 +1,27 @@
+BIG TASK:
+create static(local) web-page with JS with data visualisation
+(take data somewhere in i-net, for example, currency exchange)
+and plot these data (allow select number of curves, for example,
+number of currencies)
+Title
+Headers
+List(s)
+Link(s)
+Table(s)
+Image(s)
+Graphic(s) - SVG
+----------------------------
++include Html in html
++ inline CSS, internal CSS, external CSS
+
+1) SSH - !!!
+2) who - parbauda, kas ir pieslēdzies.
+3) last - prints, who has connected!
+
+https://github.com/tatusmatrix/EDIBO/tree/master/Day9_Day10
+
+https://www.webnode.lv/veidnu-detalas/dzkrlz/
+
+https://css-tricks.com/how-to-make-charts-with-svg/
+
+
