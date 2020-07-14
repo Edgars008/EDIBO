@@ -1,56 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  
   <script src="currency.js"></script> 
 
   <link rel="stylesheet" type="text/css" href="style.css">
+
+<!-- Script to include other html files -->
+ <script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+<!-- End of the Script to include other html files -->
+
   <title>Currency</title>
 </head>
 <body>
 
-<h2>Currency list</h2>
 
-<ol>
-  <li>EUR</li>
-  <li>USD</li>
-  <li>Pound</li>
-</ol> 
- <div w3-include-html="currencyList.html"></div> 
+<!-- <div w3-include-html="currencyList.html"></div> 
 
-<a href="https://www.w3schools.com/html/html_links.asp">Click to Learn about HTML links</a>
-
+<script>
+includeHTML();
+</script>
+ -->
+<iframe src="./currencyList.html"></iframe>
 <br>
-
-<h2>Basic HTML Table</h2>
-
-<table style="width:50%">
-  <tr>
-    <th>Vārds</th>
-    <th>Uzvārds</th> 
-    <th>Vecums</th>
-  </tr>
-  <tr>
-    <td>Edgars</td>
-    <td>Naglis</td>
-    <td>27</td>
-  </tr>
-</table>
-
+<iframe src="./link.html"></iframe>
 <br>
-
-<img src="https://www.motortrend.com/uploads/sites/5/2017/11/2019-Mercedes-Benz-CLS-front-three-quarter-in-motion-07.jpg?fit=around%7C875:492" alt="Mercedez">
-
+<iframe src="./table.html"></iframe>
 <br>
-
-<svg width="400" height="100">
-  <rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
-</svg>
-
+<iframe src="./img.html"></iframe>
 <br>
-
-
+<iframe src="./svg.html"></iframe>
+<br>
 
 <svg version="1.2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="graph" aria-labelledby="title" role="img">
   <title id="title">A line chart showing some information</title>
