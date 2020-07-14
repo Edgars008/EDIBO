@@ -1,4 +1,5 @@
-//alert("Connected");
+alert("Connected");
+console.log("Connected");
 
 // Load google charts
 //google.charts.load('current', {'packages':['corechart']});
@@ -32,3 +33,16 @@ $.getJSON( url, function(data){
         $('body').append('<div><a href="http://stackoverflow.com'+this.href +'">'+this.content+'</a></div>')          
      })
 })
+
+$(".banner").each(function(){
+    var inc=$(this);
+    $.get(inc.attr("title"), function(data){
+        inc.replaceWith(data);
+    });
+});
+
+//WEB SCRAPPING
+
+async function scrapeProduct(url) {
+
+}

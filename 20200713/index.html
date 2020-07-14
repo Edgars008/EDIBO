@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  
+  <meta charset="utf-8"/>
+  <title>Currency</title>
   <script src="currency.js"></script> 
-
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <link href="w3.css rel="stylesheet"/>
+  
 
 <!-- Script to include other html files -->
- <script>
+<!-- <script>
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
   /*loop through a collection of all HTML elements:*/
@@ -35,21 +38,38 @@ function includeHTML() {
     }
   }
 };
-</script>
+</script>-->
 <!-- End of the Script to include other html files -->
 
-  <title>Currency</title>
+
 </head>
 <body>
-
 
 <!-- <div w3-include-html="currencyList.html"></div> 
 
 <script>
 includeHTML();
-</script>
- -->
-<iframe src="./currencyList.html"></iframe>
+</script> -->
+
+<!-- <div class="FirstDivID">
+This is fromHTML PAge 1
+</div>
+
+<div class="SecondDivID">
+
+</div> -->
+
+
+<!-- Get Other HTML Contents from script at the end of this index.html page-->
+<div id="currencyList"></div> 
+<div id="link"></div> 
+<div id="table"></div> 
+<div id="img"></div> 
+<div id="svg"></div> 
+
+
+
+<!-- <iframe src="./currencyList.html"></iframe>
 <br>
 <iframe src="./link.html"></iframe>
 <br>
@@ -59,6 +79,7 @@ includeHTML();
 <br>
 <iframe src="./svg.html"></iframe>
 <br>
+ -->
 
 <svg version="1.2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="graph" aria-labelledby="title" role="img">
   <title id="title">A line chart showing some information</title>
@@ -116,5 +137,24 @@ var d = new Date();
 document.getElementById("demo").innerHTML = d.getDate() + "-" +(d.getMonth() + 1) + "-" + d.getFullYear();
 </script>
 
+
+<!-- Using jQuery to get other html files in this html file -->
+    <script> 
+    $(function(){
+      $("#currencyList").load("currencyList.html","link.html"); 
+      $("#link").load("link.html"); 
+      $("#table").load("table.html"); 
+      $("#img").load("img.html"); 
+      $("#svg").load("svg.html"); 
+    });
+    </script> 
+<!-- END OF: Using jQuery to get other html files in this html file -->
 </body>
 </html>
+
+
+<script type="text/javascript">
+$(function () {
+$(".SecondDivID").load("currencyList.html");
+});
+</script>
