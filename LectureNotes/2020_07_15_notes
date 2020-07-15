@@ -96,7 +96,7 @@ _____________ANGULAR_________________________
 Kā arī pievienojam imports tagā MatSliderModule
 4) app.component.html pievienojam   <mat-slider min="1" max="100" step="1" value="1"></mat-slider>
 
-
+r 111
 
 
 
