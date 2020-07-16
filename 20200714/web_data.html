@@ -3,24 +3,24 @@
 <head>
 	<title>Currency</title>
 	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
-  <!-- <script src="src.js"></script>  -->
+    <script src="src.js"></script> 
 
 </head>
 <body>
 
 	<h1></h1>
 
-<canvas id="myChart" width="400" height="400"></canvas>
+<canvas id="myChart" width="400" height="100"></canvas>
 
 <script>
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: ['EUR', 'Blue', 'Yellow'],
+        labels: ['EUR', 'USD', 'POUND'],
         datasets: [{
             label: '# of Votes',
-            data: [100, 75, 50, 25, 0],
+            data: [25, 0],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)'
             ],

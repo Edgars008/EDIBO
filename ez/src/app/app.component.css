@@ -1,0 +1,15 @@
+.make-it-inline {
+    display: inline;
+
+}
+
+img {
+    border-radius: 13px;
+    margin: 10px;
+    border: 10px gray;
+}
+
+img:hover {
+    transform: scale(1.1);
+    transition: all .2s;
+}

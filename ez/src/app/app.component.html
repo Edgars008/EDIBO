@@ -1,0 +1,20 @@
+Hello World
+
+Te bus bildes:
+
+<button (click)="increaseImageCount()">Give me More!</button>
+<button (click)="toggle()">Toogle</button>
+
+<div class="make-it-inline" *ngIf="isVisible"> 
+  <p *ngFor="let image of imageSources">
+    <img [src]="image" alt="Bilde">
+    
+    <!-- [src]="imageSources[0]" alt="Bilde"> -->
+    <!-- <img src="{{imageSources[1]}}" alt="Bilde"> -->
+    
+    </p>
+</div>
+
+
+
+<!-- {{imageSources | json}} -->
