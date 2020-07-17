@@ -1,0 +1,76 @@
+KISS - keep it short and simple
+YAGNI - you aint gone need it
+DRY - dont repeat yourself
+
+Dators -> Git -> Protokols (Ci / Cd ; JENKINS(test, doc) -> Mākonis
+
+Smoke test ???????????????????????
+
+Integration test ??????????????????????????????
+
+CORS- serverim pasaka no kurienes tu vari savākt tā ir aizsardzība
+
+
+Hypertext Transfer Protocol (HTTP)
+Representational state transfer (REST) :
+GET | PERSON
+GET | PERSON/ID
+DELETE PERSON/ID
+POST(create)
+PUT(update) /ID
+PATCH(update only one or two things not all) /ID
+
+Cross-Origin Resource Sharing (CORS) - protect, than no one can acces your data. -> XRF CSRF:
+Origin
+Method
+Headers
+
+fetch('https://api.ratesapi.io/api/latest'
+.then(dati =>dati.json()).then(dati =>console.log(i))
+
+Change Detection
+
+
+
+
+Module:
+
+1) Delcarations -> 1.1) Directives 1.2.) Components 1.3.) PIPE
+2)Imports
+3)Providers -> ProfileService
+4) Bootstrape
+
+ng generate service profile (ng g s profile) (ng g c currency)
+
+ngx charts -> npm i @swimlane
+
+
+LifeCycle Angular
+Asyncrone thing in programming
+RxJS
+Promise
+
+NAMING
+CASH
+Mapping- take data and convert to what you need
+
+
+Object.key
+Object.entry
+Object.value
+
+Map saglabā kopiju un izdara ko tu vēlies ar oriģinālo masīvu, bet nemainot oriģinālo masīvu.
+
+EMET -> table>(thead>th*3)+tbody>tr
+
+STACKS = MEAN -> MONGO DB -> EXPRESS (WEB SERVER) -> Angular -> Node
+STACKS = MERN -> MONGO DB -> EXPRESS (WEB SERVER) -> React -> Node
+
+LAMP - Linux -> Apache ->  My SQL -> PHP
+
+Angular + Dotnet
+ 
+https://www.netlify.com/
+https://clickclickclick.click/#8503b91c45d95ab37835a66a963aaf84
+https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+https://ratesapi.io/
