@@ -1,6 +1,17 @@
-body {background-color: coral;
-font-family: 'Open Sans', sans-serif;}
+body {
+  background-color: #5CDB95;
+  font-family: 'Open Sans', sans-serif;
+}
 
+iframe {
+  width: 100%;
+}
+
+#todaysDate {
+  text-align: center;
+}
+
+/* SVG graphic style designe */
 .graph .labels.x-labels {
   text-anchor: middle;
 }
@@ -9,10 +20,10 @@ font-family: 'Open Sans', sans-serif;}
   text-anchor: end;
 }
 
-
 .graph {
   height: 500px;
   width: 800px;
+  /* background-color: black; */
 }
 
 .graph .grid {
@@ -34,10 +45,6 @@ font-family: 'Open Sans', sans-serif;}
 
 .data {
   fill: red;
-  stroke-width: 1; 
+  stroke-width: 3; 
 }
-
-table, th, td {
-  border: 1px solid black;
-  text-align: center;
-}
+/* END of SVG graphic style designe */

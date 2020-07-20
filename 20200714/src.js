@@ -1,30 +1,34 @@
 const fetch = require("node-fetch");
+// const axios = require('axios');
+const ul = document.getElementById('rates');
+var EUR="EUR €";
+var USD="USD $";
+var POUND="Pound £";
 
-// fetch('./xml/books.xml')
-//   .then(response => response.json())
-//   .then(data => console.log(data));
+var chooseDate="2013-12-24";
 
-// fetch('./xml/books.xml')
-// .then(function(resp) {
-// 	return resp.text();
-// })
-// .then(function(data) {
-// 	console.log(data);
-// 	let parser = new DOMParser(),
-// 	xmlDoc = parser.parserFromString(data, 'text/xml');
-// 		console.log(xmlDoc.getElementsByTagName('author'));
-// })
-
-fetch('https://jsonplaceholder.typicode.com/posts/1')
+// Get data with fetch function
+fetch('http://data.fixer.io/api/2013-12-24?access_key=d1750a6120d947dff0e645a63ca7dc06&base=EUR&symbols=USD,GBP,EUR')
   .then(response => response.json())
   .then(json => console.log(json))
 
 
 
-
+// Get data with axios function
+// axios.get('https://jsonplaceholder.typicode.com/todos/1')
+//   .then(function (response) {
+//     // handle success
+//     console.log(response);
+//   })
+//   .catch(function (error) {
+//     // handle error
+//     console.log(error);
+//   })
+//   .finally(function () {
+//     // always executed
+//   });
 
 // Node server to start  
-
 const http = require('http');
 
 const hostname = '127.0.0.1';
