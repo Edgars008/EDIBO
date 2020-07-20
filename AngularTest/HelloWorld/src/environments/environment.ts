@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  ratesUrl: 'https://api.exchangeratesapi.io/history?start_at=2018-01-01&end_at=2018-09-01&symbols={symbols}&base={base}',
+  ratesUrl1: 'https://api.exchangeratesapi.io/history?start_at=2018-01-01&end_at=2018-09-01&symbols={symbols}&base={base}',
+  ratesUrl1: 'http://localhost:5000/WeatherForecast'
 };
 
 /*

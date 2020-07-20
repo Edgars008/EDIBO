@@ -10,6 +10,11 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatCardModule} from '@angular/material/card'; 
 import {MatCheckboxModule} from '@angular/material/checkbox'; 
 import {MatChipsModule} from '@angular/material/chips'; 
+import { ProfileService } from './profile.service';
+import{ DataService} from './data.service';
+import{CurrencyModule} from './currency/currency.module'
+import { AppRoutingModule } from './app-routing.module';
+
 
 @NgModule({
   declarations: [
@@ -29,9 +34,14 @@ import {MatChipsModule} from '@angular/material/chips';
     MatCardModule,
     MatCheckboxModule,
     MatChipsModule,
+    AppRoutingModule,
+    CurrencyModule,
     
   ],
-  providers: [],
+  providers: [
+    ProfileService,
+    DataService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
