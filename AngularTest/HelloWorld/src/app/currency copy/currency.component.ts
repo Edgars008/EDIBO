@@ -16,14 +16,14 @@ interface RateData {
 }
 
 @Component({
-  selector: 'app-currency',
-  templateUrl: './currency.component.html',
-  styleUrls: ['./currency.component.scss'],
+  selector: 'app-weather',
+  templateUrl: './weather.component.html',
+  styleUrls: ['./weather.component.scss'],
 })
-export class CurrencyComponent implements OnInit {
+export class WeatherComponent implements OnInit {
   baseRate = 'EUR';
   symbols = 'USD,GBP';
-  currencyData: any;
+  weatherData: any;
 
   startDate: string;
   endDate: string;
