@@ -79,21 +79,16 @@ namespace TodoApi.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<TodoItem>> CreateTodoItem(TodoItemDTO todoItemDTO)
+        public async Task<ActionResult<TodoItem>> PostTodoItem(TodoItem todoItem)
         {
-            var todoItem = new TodoItem
-            {
-                IsComplete = todoItemDTO.IsComplete,
-                Name = todoItemDTO.Name
-            };
+            todoItem.CreationTime = DateTime.Now;
 
             _context.TodoItems.Add(todoItem);
             await _context.SaveChangesAsync();
+            Console.WriteLine($"Post created at: {DateTime.Now}");
 
-            return CreatedAtAction(
-                nameof(GetTodoItem),
-                new { id = todoItem.Id },
-                ItemToDTO(todoItem));
+            return CreatedAtAction("GetTodoItem", new { id = todoItem.Id }, todoItem);
+            
         }
 
         // DELETE: api/TodoItems/5

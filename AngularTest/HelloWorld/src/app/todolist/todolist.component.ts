@@ -4,15 +4,12 @@ import { environment } from 'src/environments/environment';
 
 import { map } from 'rxjs/operators';
 
-interface RateDateRates {
-  [k: string]: { [k: string]: number }
-}
-
-interface RateData {
-  start_at: string;
-  base: string;
-  end_at: string;
-  rates: RateDateRates;
+interface TodoListData {
+  id: number;
+  name: string;
+  creationTime: string;
+  updateTime: string,
+  isComplete: boolean;
 }
 
 @Component({
@@ -20,36 +17,24 @@ interface RateData {
   templateUrl: './todolist.component.html',
   styleUrls: ['./todolist.component.scss'],
 })
-export class TodolistComponent implements OnInit {
-  baseRate = 'EUR';
-  symbols = 'USD,GBP';
-  weatherData: any;
 
-  startDate: string;
-  endDate: string;
-  rates: any[];
+export class TodolistComponent implements OnInit {
+  
+    todoList: any[];
 
   constructor(private restClient: HttpClient) {}
 
   ngOnInit(): void {
     this.restClient
-      .get<RateData>(this.getRatesUrl())
+      .get<TodoListData>(this.getTodoListUrl())
       .subscribe((data) => this.processData(data));
   }
 
-  processData(data: RateData): void {
-    this.startDate = data.start_at;
-    this.endDate = data.end_at;
-    this.rates = Object.entries(data.rates)
-    .map(divainiba=>({
-      date: divainiba[0],
-      rate: divainiba[1]
-    }));
+  processData(data: TodoListData): void {
+      this.todoList = Object.entries(data);
   }
-
-  getRatesUrl(): string {
-    return environment.ratesUrl
-      .replace('{base}', this.baseRate)
-      .replace('{symbols}', this.symbols);
+    getTodoListUrl(): string {
+    return environment.TodoListUrl;
+      
   }
 }
