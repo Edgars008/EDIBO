@@ -16,11 +16,11 @@ interface RateData {
 }
 
 @Component({
-  selector: 'app-weather',
-  templateUrl: './weather.component.html',
-  styleUrls: ['./weather.component.scss'],
+  selector: 'app-todolist',
+  templateUrl: './todolist.component.html',
+  styleUrls: ['./todolist.component.scss'],
 })
-export class WeatherComponent implements OnInit {
+export class TodolistComponent implements OnInit {
   baseRate = 'EUR';
   symbols = 'USD,GBP';
   weatherData: any;

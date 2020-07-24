@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { WeatherComponent } from './weather.component';
-import { WeatherService} from './weather.service';
+import { TodolistComponent } from './todolist.component';
+import { TodolistService} from './todolist.service';
 import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
-  declarations: [WeatherComponent],
+  declarations: [TodolistComponent],
   imports: [
     CommonModule,
     HttpClientModule,
   ],
   exports:[
-    WeatherComponent,
+    TodolistComponent,
   ],
   providers:[
-    WeatherService
+    TodolistService
   ]
 })
-export class WeatherModule { }
+export class TodolistModule { }
