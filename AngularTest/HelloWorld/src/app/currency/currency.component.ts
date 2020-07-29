@@ -35,7 +35,6 @@ export class CurrencyComponent implements OnInit {
   rates: any[];
 
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
-  dataSource = new MatTableDataSource(RateData);
 
   @ViewChild(MatSort, {static: true}) sort: MatSort;
 

@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import{CurrencyModule} from './currency/currency.module'
 import { AppRoutingModule } from './app-routing.module';
 import{WeatherModule} from './weather/weather.module'
+import{TodolistModule} from './todolist/todolist.module'
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import{WeatherModule} from './weather/weather.module'
     CurrencyModule,
     AppRoutingModule,
     WeatherModule,
+    TodolistModule,
   ],
   providers: [ ],
   bootstrap: [AppComponent]
