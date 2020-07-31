@@ -1,0 +1,24 @@
+<h1>Darāmo lietu saraksts:</h1>
+
+<table class="table table-border">
+  <thead>
+    <th>|ID|</th>
+    <th>Darāmo lietu saraksts|</th>
+    <th>Laiks|</th>
+    <th>Izdarīts Y/n|</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let todoItem of todoList">
+      <td>{{todoItem[1].id}}</td>
+      <td>{{todoItem[1].name}}</td>
+      <td>{{todoItem[1].creationTime}}</td>
+      <td>{{todoItem[1].isComplete}}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<!-- <div>
+  {{temperatures | json}}
+</div> -->
